@@ -43,8 +43,8 @@ class Command(BaseCommand):
                             autor = autor.strip()
                             if not autor:
                                 continue
-                        cred = Credito(nome=autor, publicacao=pub)
-                        cred.save()
+                            cred = Credito(nome=autor, publicacao=pub)
+                            cred.save()
                         self.stdout.write('.')
                         qt_registros += 1
                         
