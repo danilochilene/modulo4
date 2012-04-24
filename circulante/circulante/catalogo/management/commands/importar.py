@@ -1,5 +1,4 @@
 # coding: utf-8
-
 # XXX: melhorar tratamento de errors
 #    - encoding inexistente
 #    - nao conseguimos ler o arquivo
