@@ -7,7 +7,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'circulante.views.home', name='home'),
-    # url(r'^circulante/', include('circulante.foo.urls')),
     url(r'^cat/', include('circulante.catalogo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

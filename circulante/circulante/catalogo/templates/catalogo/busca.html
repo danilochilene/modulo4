@@ -4,6 +4,10 @@
 </head>
 <body>
     <h1>Busca de publicações</h1>
+    
+    <p>
+        <a href="{% url catalogar %}">Inserir nova publiação</a>
+    </p>
     {% if erros %}
         <ul>
             {% for erro in erros %}
@@ -15,24 +19,27 @@
         <input type="text" name="q" value="{{q}}">
         <input type="submit" value="Buscar">
     </form>
-<hr>
+<hr>    
+   
+{% if pesquisa %}
+    {% if publicacoes %}
 
-{% if publicacoes %}
-
-<h3>{{publicacoes|length}} publicaç{{publicacoes|pluralize:"ão,ões"}} encontrada{{publicacoes|pluralize}}.</h3>
-<hr>
-
-<table>
-    {% for pub in publicacoes %}
-        <tr>
-            <td>{{pub.id_padrao}}</td>
-            <td>{{pub.titulo}}</td>
-        </tr>        
-    {% endfor %}
-</table>
-{% else %}
-    {% if resultados %} Nenhuma publicação encontrada com o termo {{q}} {% endif %}
-{% endif %}    
+        <h2>{{publicacoes|length}} 
+            publicaç{{publicacoes|pluralize:"ão,ões"}} encontrada{{publicacoes|pluralize}}.</h2>
+   
+        <table>   
+            {% for pub in publicacoes %}
+                <tr>
+                    <td>{{pub.id_padrao}}</td>
+                    <td><a href="{% url editar pub.pk %}">{{pub.titulo}}</a></td>
+            
+                </tr>
+            {% endfor %}
+        </table>   
+    {% else %}
+        Nenhuma publicação encontrada com o termo '{{q}}'.
+    {% endif %}   
+{% endif %}   
     
 </body>
 </html>

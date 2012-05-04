@@ -164,4 +164,3 @@ def convertISBN13toLang(isbn13):
         if possible_group in group_lang:
             return group_lang[possible_group]
     return None
-
