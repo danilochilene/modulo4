@@ -1,4 +1,7 @@
 *.pyc
 *~
 settings_local.include
+<<<<<<< HEAD
 *.sqlite
+=======
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa

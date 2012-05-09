@@ -3,10 +3,13 @@
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+<<<<<<< HEAD
 import os
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
+=======
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -74,7 +77,10 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+<<<<<<< HEAD
     os.path.join(PROJECT_PATH, "static"),
+=======
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa
 )
 
 # List of finder classes that know how to find static files in
@@ -114,7 +120,10 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+<<<<<<< HEAD
     os.path.join(PROJECT_PATH, "templates"),
+=======
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa
 )
 
 INSTALLED_APPS = (
@@ -129,7 +138,11 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'circulante.catalogo',
+<<<<<<< HEAD
     'circulante.emprestimo',
+=======
+    'circulante.emprestimo',    
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa
 )
 
 # A sample logging configuration. The only tangible logging
@@ -164,6 +177,11 @@ LOGGING = {
 # configuracoes especificas do Circulante
 AUTH_PROFILE_MODULE = 'emprestimo.Participante'
 
+<<<<<<< HEAD
+=======
+import os
+PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa
 execfile(os.path.join(PROJECT_PATH,'settings_local.include'))
 
 
@@ -173,4 +191,7 @@ execfile(os.path.join(PROJECT_PATH,'settings_local.include'))
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76b4c88f288fe2dc8991da18df1ad30561d6c5aa
